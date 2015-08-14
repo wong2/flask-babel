@@ -216,7 +216,7 @@ def get_locale():
             if rv is None:
                 locale = babel.default_locale
             else:
-                locale = Locale.parse(rv)
+                locale = rv
         ctx.babel_locale = locale
     return locale
 
